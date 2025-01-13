@@ -30,7 +30,6 @@
   border: 2px solid var(--border-color);
   padding-top: var(--padding-top-bottom);
   padding-bottom: var(--padding-top-bottom);
-  max-block-size: 368px;
 }
 
 .header__width {
@@ -44,7 +43,7 @@
 }
 
 .header__title {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-size: var(--header-main-title-font-size);
   text-transform: uppercase;
   color: var(--border-color);
@@ -52,7 +51,7 @@
 }
 
 .header__subtitle {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-size: var(--header-subtitle-font-size);
   font-weight: var(--font-weight-regular);
   text-transform: uppercase;
@@ -71,7 +70,7 @@
   margin: 100px var(--margin-left-right) 0;
 }
 
-.main__section {
+.content__section {
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
 }
@@ -106,7 +105,7 @@
   top: 25px;
   right: 25px;
   z-index: 1;
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: var(--font-weight-regular);
@@ -176,7 +175,6 @@
   font-family: var(--main-font-family), sans-serif;
   font-variation-settings: "wght" var(--font-weight-regular);
   font-size: 18px;
-  text-shadow: 2px 4px 3px rgba(82, 80, 80, 1);
   line-height: 117%;
 }
 
@@ -222,6 +220,7 @@
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -232,7 +231,6 @@
   border: 2px solid var(--border-color);
   padding: 0;
   margin-right: 2px;
-  transition: 0.3s ease;
 }
 
 .card__like-button {
@@ -249,7 +247,7 @@
 }
 
 .button__text__like {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   line-height: 90%;
 }
@@ -268,23 +266,15 @@
   }
 }
 
-.footer {
+.save-button {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: clamp(6.25rem, 6.184rem + 0.2817vw, 6.4375rem);
-}
-
-.footer__save-button {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 8px;
   min-inline-size: 335px;
   min-block-size: 55px;
-  padding: 15px 20px;
+  padding: 15px 20px; 
 }
 
 .floppy__icon {
@@ -297,7 +287,7 @@
 }
 
 .button__saved__text {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   line-height: 90%;
 }
@@ -314,12 +304,18 @@
   padding: 30px;
 }
 
+@media (min-width: 374px) and (max-width: 1439px) {
+  .dialog[open] {
+    padding: 30px 40px;
+  }
+}
+
 .dialog::backdrop {
   background: var(--border-color);
   opacity: 0.75;
 }
 
-.windows__section {
+.windows__dialog {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -327,7 +323,7 @@
 }
 
 .windows__text {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-weight: var(--font-weight-regular);
   font-size: 14px;
   line-height: 150%;
@@ -340,7 +336,7 @@
 }
 
 .button__text__dialog {
-  font-family: var(--accent-font-family), sans-serif;
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   line-height: 90%;
   text-transform: uppercase;
@@ -353,10 +349,7 @@
 }
 
 @media (width <= 375px) {
-  .footer {
-    padding-top: 52px;
-  }
-  .footer__save-button {
+  .save-button {
     flex-direction: column;
     flex-wrap: wrap;
     min-inline-size: 306px;

@@ -18,7 +18,7 @@
       <h2 class="header__subtitle">закрывающий тег</h2>
     </header>
     <main class="content content__width">
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         </div>
@@ -83,7 +83,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">1 спринт: Я — чистый лист</h2>
         </div>
@@ -150,7 +150,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">1 спринт: А если не получится?</h2>
         </div>
@@ -215,7 +215,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">2 спринт: Погоня за идеалом</h2>
         </div>
@@ -282,7 +282,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">2 спринт: О тех, кто рядом</h2>
         </div>
@@ -350,7 +350,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">3 спринт: Обходные стратегии</h2>
         </div>
@@ -415,7 +415,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">3 спринт: Когда опускаются руки</h2>
         </div>
@@ -482,7 +482,7 @@
           </div>
         </article>
       </section>
-      <section class="main__section">
+      <section class="content__section">
         <div class="cards__title">
           <h2 class="title">«Сейчас я здесь»</h2>
         </div>
@@ -551,12 +551,10 @@
           </div>
         </article>
       </section>
-    </main>
-    <footer class="footer">
       <button
         type="button"
         onclick="window['popup'].showModal()"
-        class="button footer__save-button"
+        class="button save-button"
       >
         <svg
           class="floppy__icon"
@@ -565,14 +563,14 @@
           viewBox="0 0 40 40"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <use href="./images/svg/floppy.svg#floppy"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text button__saved__text"
-          >Сохранить на память</span
+          >Сохранить на&nbsp;память</span
         >
       </button>
       <dialog id="popup" class="dialog">
-        <section class="windows__section">
+        <div class="windows__dialog">
           <svg
             class="popup__icon"
             width="40"
@@ -580,10 +578,10 @@
             viewBox="0 0 40 40"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <use href="./images/svg/floppy.svg#floppy"></use>
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <span class="windows__text">Вставьте дискету, чтобы продолжить</span>
-        </section>
+          <p class="windows__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
         <button
           type="button"
           onclick="window['popup'].close()"
@@ -592,7 +590,7 @@
           <span class="button__text button__text__dialog">ok</span>
         </button>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
