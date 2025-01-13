@@ -1,1 +1,1 @@
-git@github.com:PolinaAlexP/zakrivayuschiy-teg-f.git
+https://github.com/PolinaAlexP/zakrivayuschiy-teg-f.git
