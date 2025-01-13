@@ -115,7 +115,7 @@
   text-shadow: 0 0 2px var(--bg-color);
 }
 
-@supports ((text-stroke: 1px var(--bg-color)) or -webkit-text-stroke: 1px var(--bg-color)) {
+@supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .img__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--bg-color);
