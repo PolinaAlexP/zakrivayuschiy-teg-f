@@ -17,6 +17,7 @@
   font-variation-settings: "wght" var(--font-weight-regular);
   background-image: var(--bg-image);
   background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
 }
 
@@ -63,11 +64,10 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
-  background-image: var(--bg-image);
 }
 
 .content__width {
-  margin: 100px var(--margin-left-right) 0;
+  margin: 100px var(--margin-left-right) var(--margin-bottom);
 }
 
 .content__section {
@@ -90,7 +90,7 @@
 .cards__images {
   position: relative;
   min-inline-size: 100%;
-  min-block-size: 700px;
+  min-block-size: 700px; 
   outline: 1px solid var(--border-color);
 }
 
@@ -110,7 +110,7 @@
   text-transform: uppercase;
   font-weight: var(--font-weight-regular);
   mix-blend-mode: hard-light;
-  opacity: 0.8;
+  opacity: 0.5;
   text-shadow: 0 0 2px var(--bg-color);
 }
 
